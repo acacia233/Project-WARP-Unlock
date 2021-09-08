@@ -9,7 +9,7 @@ function Start {
     echo -e " [Intro] Test System:Ubuntu 20"
     echo -e " [Intro] OpenSource-Project:https://github.com/acacia233/Project-WARP-Unlock"
     echo -e " [Intro] Telegram Channel:https://t.me/cutenicobest"
-    echo -e " [Intro] Version:2021-09-04-1"
+    echo -e " [Intro] Version:2021-09-08-1"
     Check_System_Depandencies
 }
 
