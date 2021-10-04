@@ -4,6 +4,7 @@ source /etc/profile
 
 # Variation
 Interface=wg
+Region=
 Hostname=
 Telegram_Token=
 Telegram_ChatID=
@@ -18,7 +19,7 @@ function Start {
 function Test_Netflix_Access {
     local result1="$(curl --interface $Interface --user-agent "${UA_Browser}" -fsL --write-out %{http_code} --output /dev/null --max-time 5 "https://www.netflix.com/title/81215567" 2>&1)"
     local result2="$(curl --interface $Interface --user-agent "${UA_Browser}" -fs --max-time 10 --write-out %{redirect_url} --output /dev/null "https://www.netflix.com/title/80018499" | cut -d '/' -f4 | cut -d '-' -f1 2>&1)"
-    if [[ "$result1" == "200" ]] && [[ "$result2" == "sg" ]]; then
+    if [[ "$result1" == "200" ]] && [[ "$result2" == "$Region" ]]; then
         PushNotification
     else
         ChangeIP
