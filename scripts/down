@@ -8,4 +8,5 @@ iptables -t mangle -D POSTROUTING -o wg -p tcp -m tcp --tcp-flags SYN,RST SYN -j
 iptables -t nat -D POSTROUTING -m mark --mark 0x2 -j MASQUERADE
 iptables -t mangle -F fwmark
 iptables -t mangle -X fwmark
+sleep 2
 ipset destroy warp

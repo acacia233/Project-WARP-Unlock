@@ -77,7 +77,7 @@ function Check_finished {
         echo -e " [Error] Connection Refused,Please check manually!"
         exit
     fi
-    local routing_status="$(mtr -w -c 1 youtube.com)"
+    local routing_status="$(mtr -wn -c 1 youtube.com)"
     if [[ "$routing_status" != *"172.16.0.1"* ]]; then
         echo -e " [Error] Routing is not correct,Please check manually!"
     else
