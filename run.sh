@@ -41,7 +41,7 @@ function Generate_WireGuard_WARP_Profile {
     sed -i '8 i PostUp = /etc/wireguard/up' /etc/wireguard/wg.conf
     sed -i '9 i Predown = /etc/wireguard/down' /etc/wireguard/wg.conf
     sed -i '15 i PersistentKeepalive = 5' /etc/wireguard/wg.conf
-    sed -i "s/engage.cloudflareclient.com/162.159.192.3/g" /etc/wireguard/wg.conf
+    sed -i "s/engage.cloudflareclient.com/162.159.193.1/g" /etc/wireguard/wg.conf
     Routing_WireGuard_WARP
 }
 
