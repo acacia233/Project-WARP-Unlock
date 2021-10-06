@@ -82,6 +82,7 @@ function Check_finished {
         echo -e " [Error] Routing is not correct,Please check manually!"
     else
         echo -e " [Info] Routing is working normally,Enjoy~"
+        echo -e " [Sponsor] USDT-TRC20:TCXfFzEQ7s968s4XiWzjNGdjuuew3CzLiF"
     fi
 }
 
