@@ -41,8 +41,7 @@ function ChangeIP {
 
 function Judge {
     if [[ $Count == 0 ]];then
-        let sleeptime=$Count*6+10
-        sleep $sleeptime
+        sleep 10
         echo -e " [Info] Still Working,Skipped..."
         Test_Netflix_Access
     else
