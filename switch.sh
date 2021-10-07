@@ -47,6 +47,7 @@ function Judge {
         Test_Netflix_Access
     else
         PushNotification
+        Test_Netflix_Access
     fi
 }
 
@@ -54,6 +55,7 @@ function PushNotification {
     local Message="New WARP IP for Netflix%0ANode:$Hostname%0AChange Times:$Count"
     echo -e " [Info] Change Times:$Count"
     curl -s -X POST $URL_Message -d chat_id=$Telegram_ChatID -d text="$Message" >/dev/null
+    Count=0
 }
 
 Start
