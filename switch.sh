@@ -17,7 +17,7 @@ function Start {
     echo -e " [Intro] Test System:Ubuntu 20"
     echo -e " [Intro] OpenSource-Project:https://github.com/acacia233/Project-WARP-Unlock"
     echo -e " [Intro] Telegram Channel:https://t.me/cutenicobest"
-    echo -e " [Intro] Version:2021-10-6-1"
+    echo -e " [Intro] Version:2021-10-7-1"
     Test_Netflix_Access
 }
 
