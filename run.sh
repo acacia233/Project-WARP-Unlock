@@ -6,10 +6,11 @@ source /etc/profile
 
 function Start {
     echo -e " [Intro] One-Click Unlock Stream Media Script By Cloudflare-WARP"
-    echo -e " [Intro] Test System:Ubuntu 20"
     echo -e " [Intro] OpenSource-Project:https://github.com/acacia233/Project-WARP-Unlock"
     echo -e " [Intro] Telegram Channel:https://t.me/cutenicobest"
-    echo -e " [Intro] Version:2021-09-08-1"
+    echo -e " [Intro] Version:2021-11-03-1"
+    echo -e " [Intro] Require Kernel Version > 5.6,Press Ctrl + C to exit..."
+    sleep 5
     Check_System_Depandencies
 }
 
