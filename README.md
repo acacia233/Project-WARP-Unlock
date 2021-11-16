@@ -12,7 +12,7 @@
 - 使用iptables为ipset中的ip打上mark，再让这些ip走特定的路由表
 - 特定的路由表中仅存在一条使用wireguard的默认路由
 
-
+**因为WireGuard直接安装对内核版本有一定的要求（>5.6）,所以该一键脚本不能在较老的系统/使用较老系统内核上正常使用**
 
 一键起飞：`curl -sL https://raw.githubusercontent.com/acacia233/Project-WARP-Unlock/main/run.sh | bash`
 
