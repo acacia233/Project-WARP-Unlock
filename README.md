@@ -14,7 +14,11 @@
 
 **因为WireGuard直接安装对内核版本有一定的要求（>5.6）,所以该一键脚本不能在较老的系统/使用较老系统内核上正常使用**
 
-一键起飞：`curl -sL https://raw.githubusercontent.com/acacia233/Project-WARP-Unlock/main/run.sh | bash`
+*另有使用BoringTun实现的版本，用户态实现的WireGuard不依赖于内核版本。适配性更好
+
+使用WireGuard的版本（需要内核版本 > 5.6）：`curl -sL https://raw.githubusercontent.com/acacia233/Project-WARP-Unlock/main/run.sh | bash`
+
+使用BoringTun的版本：`curl -sL https://raw.githubusercontent.com/acacia233/Project-WARP-Unlock/main/run-boringtun.sh | bash`
 
 如果遇到解决不了的问题，欢迎加入Telegram频道：@cutenicobest 探讨
 
